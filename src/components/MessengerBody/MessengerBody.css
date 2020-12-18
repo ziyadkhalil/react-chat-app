@@ -11,3 +11,9 @@
 .messenger__footer {
   height: 90px;
 }
+@media (max-width: 940px) {
+  .messenger__body {
+    min-width: unset;
+    padding: 0px 5px;
+  }
+}
