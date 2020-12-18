@@ -1,0 +1,24 @@
+.messenger__header {
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+.header__user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header__user img {
+  border-radius: 50%;
+}
+
+.header__actions {
+  display: none;
+  margin-left: auto;
+}
+
+@media (max-width: 940px) {
+  .header__actions {
+    display: block;
+  }
+}

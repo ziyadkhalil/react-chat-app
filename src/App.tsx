@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import "./App.css";
+import Message from "./components/Message/Message";
+import MessengerTextArea from "./components/MessengerTextArea/MessengerTextArea";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Messenger from "./views/Messenger/Messenger";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="wrapper">
+        <Sidebar />
+        <div className="content">
+          <Switch>
+            <Route exact path="/messenger/:id">
+              <Messenger />
+            </Route>
+            <Route path="/">
+              <Redirect to="/messenger/1" />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 

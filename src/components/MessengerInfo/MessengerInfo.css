@@ -1,0 +1,34 @@
+.messenger__info {
+  width: 320px;
+  padding: 32px;
+  overflow: scroll;
+}
+.info__close-button {
+  display: none;
+}
+.messenger__info img {
+  border-radius: 50%;
+  width: 100px;
+}
+.messenger__info--active {
+  margin-right: -320px;
+}
+
+@media (max-width: 940px) {
+  .messenger__info {
+    margin-right: -320px;
+  }
+  .messenger__info--active {
+    z-index: 3;
+    height: 100vh;
+    margin-right: 0px;
+    width: 100vw;
+    background-color: #f4f3f8;
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+  .info__close-button {
+    display: block;
+  }
+}

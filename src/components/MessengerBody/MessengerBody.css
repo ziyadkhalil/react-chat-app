@@ -1,0 +1,13 @@
+.messenger__body {
+  padding: 0px 35px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-right: 2px solid rgb(234, 233, 238);
+  border-left: 2px solid rgb(234, 233, 238);
+}
+
+.messenger__footer {
+  height: 90px;
+}

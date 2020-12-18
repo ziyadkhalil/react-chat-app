@@ -1,0 +1,4 @@
+.messenger__chat {
+  flex: 1;
+  overflow: scroll;
+}

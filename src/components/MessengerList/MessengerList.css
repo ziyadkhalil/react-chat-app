@@ -1,0 +1,14 @@
+.messenger__list {
+  width: 360px;
+  padding: 32px;
+  overflow: scroll;
+}
+@media (max-width: 940px) {
+  .messenger__list {
+    width: 88px;
+    padding: 19px;
+  }
+  .messenger__list h1 {
+    display: none;
+  }
+}

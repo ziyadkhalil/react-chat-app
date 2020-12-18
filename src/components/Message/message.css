@@ -1,0 +1,36 @@
+.message {
+  margin: 5px 0px;
+  background-color: white;
+  max-width: 400px;
+  padding: 5px 10px;
+  border-radius: 7px 7px 7px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.message__seen {
+  display: none;
+}
+small {
+  color: #bababc;
+}
+
+.me {
+  margin-left: auto;
+  background-color: rgb(71, 102, 246);
+  border-radius: 7px 7px 0px 7px;
+}
+.me p {
+  color: white;
+}
+.me small {
+  color: #91a2f8;
+}
+
+.me .message__seen {
+  margin-left: auto;
+  display: flex;
+}
+.message__timestamp {
+  display: flex;
+  flex-direction: row;
+}
