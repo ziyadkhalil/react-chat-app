@@ -1,7 +1,5 @@
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import "./App.css";
-import Message from "./components/Message/Message";
-import MessengerTextArea from "./components/MessengerTextArea/MessengerTextArea";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Messenger from "./views/Messenger/Messenger";
 

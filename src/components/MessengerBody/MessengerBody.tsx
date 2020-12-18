@@ -1,5 +1,4 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import { MessengerListItem } from "../../types";
 import Chat from "../Chat/Chat";
 import Loading from "../Loading/Loading";

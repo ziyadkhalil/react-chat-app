@@ -2,7 +2,7 @@ import logo from "./logo.png";
 import "./Sidebar.css";
 import { MdMessage, MdSettings, MdNotifications } from "react-icons/md";
 import { HiDocument, HiOutlineCalendar } from "react-icons/hi";
-import { useHistory, useLocation, useRouteMatch } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 const Sidebar = () => {
   const location = useLocation();
 

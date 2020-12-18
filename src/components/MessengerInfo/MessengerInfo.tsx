@@ -1,4 +1,4 @@
-import { Button, Card, Collapse } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 import { MessengerListItem } from "../../types";
 import "./MessengerInfo.css";
 import { AiFillCloseCircle } from "react-icons/ai";

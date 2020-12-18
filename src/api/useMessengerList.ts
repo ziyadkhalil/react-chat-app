@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { MessengerListItem } from "../types";
 import randomDate from "./randomDate";
-const start = new Date(2001, 0, 1);
-const end = new Date();
 
 const useMessengerList = () => {
   const [loading, setLoading] = useState(true);

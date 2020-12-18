@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef } from "react";
 import Message, { MessageProps } from "../Message/Message";
 import "./Chat.css";
+
 const Chat: React.FC<{ messages: MessageProps[] }> = ({ messages }) => {
   const ref = useRef<HTMLDivElement>(null);
   useLayoutEffect(() => {
