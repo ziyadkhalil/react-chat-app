@@ -4,14 +4,6 @@
   display: flex;
 }
 
-.content {
-  display: flex;
-  margin: 10px;
-  flex: 1;
-  border-radius: 10px;
-  background-color: #f4f3f8;
-  overflow: hidden;
-}
 .messenger {
   display: flex;
   flex: 1;

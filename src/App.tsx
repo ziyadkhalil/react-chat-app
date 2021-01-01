@@ -1,23 +1,14 @@
-import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import Content from "layout/Content/Content";
+import Sidebar from "layout/Sidebar/Sidebar";
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import Sidebar from "./components/Sidebar/Sidebar";
-import Messenger from "./views/Messenger/Messenger";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="wrapper">
         <Sidebar />
-        <div className="content">
-          <Switch>
-            <Route exact path="/messenger/:id">
-              <Messenger />
-            </Route>
-            <Route path="/">
-              <Redirect to="/messenger/1" />
-            </Route>
-          </Switch>
-        </div>
+        <Content />
       </div>
     </BrowserRouter>
   );
